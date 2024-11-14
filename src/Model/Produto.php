@@ -56,6 +56,6 @@ class Produto
 
     public function getImagemDiretorio(): string
     {
-        return "img/".this->imagem;
+        return "img/".$this->imagem;
     }
 }

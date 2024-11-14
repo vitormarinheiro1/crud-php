@@ -5,6 +5,6 @@ require "src/Model/Produto.php";
 require "src/Repository/ProdutoRepositorio.php";
 
 $produtoRepositorio = new ProdutoRepositorio($pdo);
-$produtoRepositorio->deletar($_GET['id']);
+$produtoRepositorio->deletar($_POST['id']);
 
 header("Location: admin.php");

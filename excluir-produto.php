@@ -7,4 +7,4 @@ require "src/Repository/ProdutoRepositorio.php";
 $produtoRepositorio = new ProdutoRepositorio($pdo);
 $produtoRepositorio->deletar($_GET['id']);
 
-var_dump($_GET['id']);
+header("Location: admin.php");
